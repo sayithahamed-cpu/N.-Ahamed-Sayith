@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>N.Ahamed Sayith -- Portfolio</title>
+
+  <style>
+
+    body {
+
+      background: 
+
+        linear-gradient(135deg, #0d1b2a 0%, #1b263b 70%, #000814 100%),
+
+        url('https://i.postimg.cc/3xN4Vxk7/ironman-background.jpg') no-repeat center center fixed;
+
+      background-size: cover;
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+      color: #f0f0f0;
+
+      position: relative;
+
+      z-index: 1;
+
+    }
+
+    /* Dark overlay on background image for better text readability */
+
+    body::before {
+
+      content: "";
+
+      position: fixed;
+
+      top: 0; left: 0; right: 0; bottom: 0;
+
+      background-color: rgba(0, 0, 0, 0.6);
+
+      z-index: 0;
+
+    }
+
+    .container {
+
+      max-width: 800px;
+
+      margin: 40px auto;
+
+      background: #0f172a;
+
+      border-radius: 24px;
+
+      box-shadow: 0 8px 32px rgba(0, 123, 255, 0.35);
+
+      padding: 36px;
+
+      border: 2px solid #1e90ff;
+
+      position: relative;
+
+      z-index: 2;
+
+    }
+
+    header {
+
+      text-align: center;
+
+      margin-bottom: 36px;
+
+    }
+
+    .profile-photo {
+
+      width: 150px;
+
+      height: 150px;
+
+      border-radius: 50%;
+
+      overflow: hidden;
+
+      margin: 0 auto 24px;
+
+      border: 5px solid #00BFFF;
+
+      box-shadow: 0 0 30px rgba(30,144,255, 0.6);
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background: #001f3f;
+
+    }
+
+    .profile-photo img {
+
+      width: 150px;
+
+      height: 150px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      display: block;
+
+    }
+
+    h1 {
+
+      margin-bottom: 10px;
+
+      color: #1E90FF;
+
+      font-size: 2.4em;
+
+      text-shadow: 2px 2px 8px rgba(0, 191, 255, 0.6);
+
+    }
+
+    .tagline {
+
+      font-style: italic;
+
+      color: #00BFFF;
+
+      font-size: 1.2em;
+
+      margin-bottom: 12px;
+
+      text-shadow: 1px 1px 5px rgba(0, 191, 255, 0.6);
+
+    }
+
+    section {
+
+      margin: 32px 0;
+
+    }
+
+    h2 {
+
+      color: #1E90FF;
+
+      font-size: 1.4em;
+
+      margin-bottom: 12px;
+
+      border-bottom: 2px solid #00BFFF;
+
+      display: inline-block;
+
+      padding-bottom: 3px;
+
+      text-transform: uppercase;
+
+    }
+
+    ul.skills {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      padding: 0;
+
+      margin: 0;
+
+    }
+
+    ul.skills li {
+
+      background: #1E3A8A;
+
+      color: #87CEFA;
+
+      border-radius: 14px;
+
+      padding: 6px 16px;
+
+      font-weight: 600;
+
+      font-size: 1em;
+
+      list-style: none;
+
+      box-shadow: 0 2px 8px rgba(135, 206, 250, 0.3);
+
+    }
+
+    ul.contact-list {
+
+      list-style: none;
+
+      padding: 0;
+
+    }
+
+    ul.contact-list li {
+
+      background: #1a2a40;
+
+      color: #87CEFA;
+
+      border: 1px solid #1E90FF;
+
+      border-radius: 10px;
+
+      padding: 8px 12px;
+
+      margin-bottom: 10px;
+
+      font-size: 1em;
+
+      font-weight: 500;
+
+      box-shadow: 0 2px 6px rgba(30,144,255,0.5);
+
+    }
+
+    a {
+
+      color: #00BFFF;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+    }
+
+    a:hover {
+
+      color: #1E90FF;
+
+      text-decoration: underline;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      margin-top: 40px;
+
+      background: linear-gradient(90deg, #001f3f, #1E90FF);
+
+      padding: 22px;
+
+      color: #f0f0f0;
+
+      border-radius: 0 0 24px 24px;
+
+      font-weight: 600;
+
+      font-size: 1.1em;
+
+      text-transform: uppercase;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <div class="profile-photo">
+
+        <img src=" https://i.postimg.cc/59wxyTqb/IMG-20241020-003954-810.jpg" alt="N.Ahamed Sayith Profile Photo" />
+
+      </div>
+
+      <h1>N.Ahamed Sayith</h1>
+
+      <p class="tagline">Artist and Designer</p>
+
+    </header>
+
+    
+
+    <section id="about">
+
+      <h2>About Me</h2>
+
+      <p>Computer Science student passionate about programming, design, and creative problem-solving.</p>
+
+    </section>
+
+    
+
+    <section id="skills">
+
+      <h2>Skills</h2>
+
+      <ul class="skills">
+
+        <li>Photoshop</li>
+
+        <li>CorelDRAW</li>
+
+        <li>Logo Designing</li>
+
+        <li>Programming (Java & Python)</li>
+
+        <li>Communication</li>
+
+      </ul>
+
+    </section>
+
+    
+
+    <section id="projects">
+
+      <h2>Projects</h2>
+
+      <p>Your projects go here.</p>
+
+    </section>
+
+    
+
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <ul class="contact-list">
+
+        <li>
+
+          Email: <a href="mailto:sayithahamed@gmail.com">sayithahamed@gmail.com</a>
+
+        </li>
+
+        <li>
+
+          Phone: <a href="tel:+919500918317">9500918317</a>
+
+        </li>
+
+      </ul>
+
+    </section>
+
+    
+
+    <footer>
+
+      &copy; 2025 N.Ahamed Sayith • Blue Themed Portfolio
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
